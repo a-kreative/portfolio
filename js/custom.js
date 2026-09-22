@@ -624,7 +624,7 @@ jQuery(document).ready(function() {
 	
 	
 	// ===== Form Submit Settings ===== //
-	$("#submit_message").on("click", function() {
+	/***$("#submit_message").on("click", function() {
 		$('#reply_message').removeClass();
 		$('#reply_message').html('')
 		var regEx = "";
@@ -683,6 +683,6 @@ jQuery(document).ready(function() {
 				}
 			});
 		return false;
-	});
+	});***/
 	
 });
