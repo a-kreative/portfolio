@@ -1,0 +1,704 @@
+/*
+Theme Name: Closet Fiendz
+Theme URI: http://closetfiendz.com
+Author: Ashley Kyles of Blacklite Creative
+Author URI: http://blacklitecreative.com
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: closetfiendz
+Description: This is a custom wordpress template for the Closet Fiendz platform, powered by Blacklite Creative.
+*/
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Imports
+:: Skeleton - (Global)
+	-: Structure
+	-: Animation
+:: Header
+   -: Logo
+   -: Navigation
+   -: Hero
+   		: Slider
+:: Site Elements
+   -: Buttons
+   -: Images
+   -: Social Media Icons
+:: Main Content
+   -: 
+:: Footer
+:: 404
+:: Responsive
+    -: Screens & Projectors, Landscape Desktop (1440<*)
+    -: Landscape Desktop, Standard Laptop (1200<*>981)
+    -: Small Desktop, Small Laptop (980<*>769)
+    -: Large Mobile, Portrait Tablet (768<*>481)
+    -: Landscape Mobile (480<*>327)
+	-: Standard Mobile & Lower(326>*)
+*/
+
+
+/* -----------------------------------------
+   Header 
+----------------------------------------- */
+/*
+ * Logo
+ */
+
+.logo-main {
+	width: 100%;
+	height: 68px;
+	display: block;
+	position: relative;
+	text-align: center;
+}
+
+.logo-main a {
+	background-image: url(../images/theme/logo-icon.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+		background-position: top left;
+	width: 62px;
+	height: 62px;
+	display: block;
+	margin: 20px auto;
+}
+
+/* -----------------------------------------
+   Main Content  
+----------------------------------------- */
+
+#closet-view, footer,
+ .nav-clearfix, .box {
+	width: 100%;
+	height: auto;
+	display: block;
+	position: relative;
+}
+
+
+ /*
+ * Closet View
+ */
+.closet-pad {
+	margin-bottom: 50px;
+	width: 100%;
+	position: relative;
+	float: left;
+}
+
+
+.expand-panel {
+	display: block !important;
+}
+
+#closet-view {
+	background-image: url(../images/theme/closet-prev-bg-2.jpg);
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	background-attachment: fixed;
+	background-position: 50% 50%;
+}
+
+#closet-view .hr {
+	width: 100%;
+	margin-left: 0;
+	opacity: 0.3
+}
+
+#closet-view h1.theme,
+#closet-view h2.theme {
+	color: #fff
+}
+
+#closet-view h2.theme {
+	font-size: 35px;
+	font-weight: 400;
+	letter-spacing: 3px;
+	margin: 50px auto;
+	padding: 0;
+	display: block;
+	color: #fff;
+}
+
+#closet-view h2.theme span {
+	background: rgba(0,0,0,0.4);
+	font-size: 15px;
+	display: block;
+	width: 300px;
+	margin: 13px auto;
+	height: 50px;
+	line-height: 50px;
+	color: #888;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+}
+
+#closet-view h2.theme:after {
+	display: none;
+}
+
+#closet-view h2.theme small {
+	letter-spacing: 0;
+}
+
+/** Category List **/
+ul.category-list {
+	padding: 3px 20px;
+}
+
+ul.category-list,
+ul.category-list li,
+ul.category-list li a {
+	display: block;
+	position: relative;
+	width: 100%;
+}
+
+ul.category-list li a {
+	text-transform: uppercase;
+	padding: 12px 0;
+	display: inline-block;
+}
+
+ul.category-list li a:after {
+	content: '\f178';
+	font-family: fontawesome;
+	position: absolute;
+	right: 0;
+	top: 13px;
+	z-index: 15;
+	font-size: 12px;
+}
+
+ul.category-list li ul li,
+ul.category-list li ul li a {
+	text-transform: none;
+}
+
+ul.category-list li.hvr-sweep-to-right.hvr-yellow:hover a {
+	font-weight: 400;
+	padding-left: 20px;
+}
+ul.category-list li.hvr-sweep-to-right.hvr-yellow:hover a,
+ul.category-list li.hvr-sweep-to-right.hvr-yellow:hover a:after {
+	color: #000 !important;
+}
+
+
+ul.category-list li.hvr-sweep-to-right.hvr-yellow:hover a:after {
+	right: 20px;
+}
+
+#closet-view ul.category-list {
+	background: rgba(200,200,200,0.15);
+	font-weight: 300;
+}
+
+#closet-view ul.category-list li,
+#closet-view ul.category-list li a {
+	color: #fff;
+	font-size: 15px;
+}
+
+
+#closet-view ul.category-list li {
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#closet-view ul.category-list li a {
+	border-top: 1px solid rgba(0,0,0,0.5);
+}
+
+#closet-view ul.category-list li a:first-child {
+	border-top: none;
+}
+
+#closet-view ul.category-list li:last-child {
+	border-bottom: none
+}
+
+
+#closet-view ul.category-list li a:after {
+	color: rgba(255,255,255,0.3);
+}
+
+#closet-view ul.category-list li.highlight a {
+	color: #f8db54;
+}
+
+/* -----------------------------------------
+   Closet Headers 
+----------------------------------------- */
+h3.closet-theme {
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #aaa;
+	font-weight: 600;
+	text-align: left;
+	letter-spacing: 2px;
+	padding: 13px 55px;
+	width: 99%;
+	position: relative;
+	margin: 10px 0 0 0;
+	border-bottom: 1px solid rgba(200,200,200,0.4);
+}
+
+h3.closet-theme:hover {
+	cursor: pointer;
+	color: #fff;
+}
+
+h3.closet-theme .count {
+	position: absolute;
+	left: 0;
+	top: 8px;
+	height: 30px;
+	width: auto;
+	padding: 2px 5px 2px 6px;
+	border: 1px solid #f8db54;
+	display: block;
+	font-weight: 300;
+	text-align: center;
+	color: #f8db54;
+	border-radius: 	4px;
+}
+
+h3.closet-theme:hover .count {
+	background: #333;
+	border: 1px solid #333;
+}
+
+
+h3.closet-theme:after {
+	content: '\f068';
+	font-family: 'fontawesome';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-size: 16px;
+	color: #f8db54;
+	border-top: 1px solid rgba(200,200,200,0.4);
+	border-left: 1px solid rgba(200,200,200,0.4);
+	border-right: 1px solid rgba(200,200,200,0.4);
+	display: block;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	padding: 0 10px 0 13px;
+	height: 40px;
+	font-weight: 300;
+}
+
+h3.closet-theme:hover:after {
+	background: #f8db54;
+	color: #000;
+}
+
+h3.closet-theme.closed:after {
+	content: '\f067';
+}
+
+/* -----------------------------------------
+   Closet Boxes 
+----------------------------------------- */
+/*
+* Category Box
+*/
+.category-box {
+	width: 200px;
+	height: 140px;
+	background: rgba(10,10,10,0.8);
+	text-align: center;
+	display: table;
+	float: left;
+	color: #777;
+	position: relative;
+	margin: 7px 14px 7px 0;
+	border: 15px solid transparent;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+}
+
+.category-box a {
+	font-size: 18px;
+	font-weight: 300;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	border: 1px solid #2c2c2c;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.category-box a:before {
+	content: '';
+	font-family: 'fontawesome';
+	position: absolute;
+	left: 50%;
+	bottom: 5px;
+	margin-left: -20px;
+	font-size: 24px;
+	color: #f8db54;
+	display: block;
+	width: 40px;
+	text-align: center;
+	height: 40px;
+}
+
+.category-box:hover {
+	background: transparent;
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.category-box:hover a {
+	color: #f8db54;
+	border: 1px solid #777;
+}
+
+.category-box:hover a:before {
+	color: #f8db54;
+}
+
+.category-box.new {
+	background: transparent;
+}
+
+.category-box.new a {
+	border: 2px dashed #999;
+	font-size: 16px;
+	color: #999
+}
+
+.category-box.new a:before {
+	content: '\f067';
+	font-size: 18px;
+	color: #999;
+}
+
+.category-box.new:hover a {
+	border: 2px solid #f8db54;
+	color: #f8db54;
+}
+.category-box.new:hover a:before {
+	color: #f8db54;
+}
+
+/*
+* Options Box
+*/
+.options-box {
+	width: 100%;
+	background: rgba(10,10,10,0.8);
+	text-align: center;
+	display: block;
+	color: #777;
+	position: relative;
+	margin: 7px 14px 7px 0;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+.options-box .inner-pad {
+	padding: 15px 0 0 0;
+	position: relative;
+	line-height: 35px;
+}
+.options-box .inner-pad:after {
+	content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+	background: #292929;
+}
+
+.options-box h3 {
+	font-size: 18px;
+	color: #fff;
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+
+.options-box ul {
+	display: table;
+	position: relative;
+	width: 93%;
+	float: right;
+}
+.options-box a {
+	display: block;
+	margin: 40px 10px;
+	height: 45px;
+	line-height: 44px;
+	background:#333;
+	color: #aaa;
+	font-weight: 400;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	width: 170px;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+    box-shadow: 0 2px 0 0 #222;
+    -webkit-box-shadow: 0 2px 0 0 #222;
+	border: 1px solid #333;
+}
+
+.options-box a:hover {
+	background: transparent;
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+	border: 1px solid #f8db54;
+	color: #f8db54;
+    box-shadow: none;
+}
+
+.options-box li {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.options-box a.new {
+	background: transparent;
+	border: 2px dashed #f8db54;
+	color: #f8db54;
+    box-shadow: none;
+	font-weight: 500;
+}
+
+.options-box a.new:hover {
+	border: 1px solid #f8db54;
+}
+
+.options-box a.new.disabled {
+	border: 2px dashed #777;
+	color: #777;
+}
+
+.options-box a.new.disabled:hover {
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	border: 2px dashed #999;
+	color: #999;
+}
+
+.options-box .point-count {
+	font-size: 50px;
+	color: #fff;
+	font-weight: 300;
+	
+}
+.options-box .point-count.gold {
+	color: #f8db54;
+}
+.options-box .point-count.silver {
+	color: #777;
+}
+.options-box .point-count.bronze {
+	color: #a96f37;
+}
+ .options-box .point-count a {
+	border: none;
+	box-shadow: none;
+	padding: 0;
+	margin: 0;
+	background: none;
+}
+.options-box .point-count a.rewards {
+	font-size: 13px;
+	font-weight: 400;
+	color: #666;
+	width: 100%;
+	text-decoration: underline;
+}
+
+
+.options-box .point-count a.rewards:hover {
+	text-decoration: none;
+	color: #fff;
+	
+}
+.enter-closet,
+.enter-closet button {
+	visibility: hidden;
+	opacity: 0;
+	height: 0;
+}
+
+/* -----------------------------------------
+   Footer
+----------------------------------------- */
+footer {
+
+}
+
+
+/*
+ * Contact Form
+ */
+ #contact-form {
+ 	padding: 4% 2% 0 2%;
+ }
+ #contact-form input, #contact-form textarea {
+ 	width: 100%;
+ 	display: block;
+ 	margin-left: 10px;
+ 	margin-right: 10px;
+ 	position: relative;
+  	border: 1px solid #666;
+  	color: #fff;
+  	font-weight: 400;
+ }
+
+  #contact-form input:focus, #contact-form textarea:focus {
+  	background: rgba(120,120,120, 0.2);
+  	border: 1px dashed #666;
+  }
+
+  #contact-form .cf-txt {
+  	margin-bottom: 20px;
+  	height: 50px;
+  	padding: 0 15px;
+  	line-height: 50px;
+  }
+
+   #contact-form .cf-txtarea {
+  	height: 190px;
+  	padding: 15px;
+  }
+
+   #contact-form .cf-btn {
+   	border: 2px solid #c83e36;
+   	background: #c83e36;
+   	color: #fff;
+   	padding: 10px 0;
+   	text-transform: uppercase;
+   	width: 40%;
+   	margin: 25px auto auto auto;
+   }
+
+   #contact-form .cf-btn:hover {
+   	background: rgba(0,0,0,0.5);
+   	color: #c83e36;
+   }
+
+::-webkit-input-placeholder { color: rgba(130,130,130,0.6); font-size: 15px; }
+::-moz-placeholder { color: rgba(130,130,130,0.6); font-size: 15px; } /* firefox 19+ */
+:-ms-input-placeholder { color: rgba(130,130,130,0.6); font-size: 15px; } /* ie */
+input:-moz-placeholder { color: rgba(130,130,130,0.6); font-size: 15px; }
+.nav-clearfix {
+	height: 110px;
+}
+/* -----------------------------------------
+   404     
+----------------------------------------- */
+
+/* -----------------------------------------
+   Responsive      
+----------------------------------------- */
+
+/* Screens & Projectors <--> Landscape Desktop */
+
+@media (min-width: 1800px) {
+
+}
+
+/* Landscape Desktop <--> Standard Laptop */
+@media (max-width: 1550px) {
+
+}
+
+
+@media (max-width: 1380px) {
+	
+	.options-box a {
+		margin: 8px 10px;
+	}
+	.options-box li {
+		float: left;
+	}
+
+}
+
+@media (max-width: 1080px) {
+
+}
+
+/* Small Desktop <--> Small Laptop */
+@media (max-width: 990px) {
+	#main-nav {
+		display: none;
+	}
+	.nav-clearfix {
+	height: 60px;
+}
+
+h3.closet-theme,
+h3.closet-theme .count {
+	font-size: 16px;
+}
+
+h3.closet-theme:after {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 5px;
+}
+h3.closet-theme .count {
+	height: 25px;
+}
+}
+
+/* Large Mobile <--> Portrait Tablet */
+@media (max-width: 768px) {
+
+}
+
+
+@media (max-width: 615px) {
+
+}
+
+/* Landscape Mobile */
+@media (max-width: 480px) {
+
+	
+}
+
+/* Standard Mobile */
+@media (max-width: 351px) {
+
+	
+}
+
+/* Height */
+@media (max-height: 690px) {
+
+}
+
+/* -----------------------------------------
+   IE fix    
+----------------------------------------- */
+/* IE can just show/hide with no transition */
+
